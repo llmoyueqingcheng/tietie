@@ -7,6 +7,7 @@ package com.example.demo.Thread;
 public class ThreadEx extends Thread{
     public void run() {
         System.out.println(Thread.currentThread().getName());
+
     }
 
 }

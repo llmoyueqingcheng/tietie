@@ -22,10 +22,7 @@ public class ThreadTest {
             }
         }).start();
         //lamda表达式
-        new Thread(() -> {
-            System.out.println(Thread.currentThread().getName());
-        }) {
-        }.start();
+        new Thread(() ->System.out.println(Thread.currentThread().getName())).start();
 
 
 
