@@ -25,8 +25,12 @@ public class ExcelUtilTwo {
         }
 
         // 将所有类型的尽调excel文件合并成一个excel文件
-        String Path = "/Users/mocheng/Documents/excel";
-        String allFileName = "/Users/mocheng/Documents/New2.xlsx";    //定义新生成的xlx表格文件
+//
+//        String Path = "/Users/mocheng/Documents/excel";
+//        String allFileName = "/Users/mocheng/Documents/New2.xlsx";    //定义新生成的xlx表格文件
+        String Path = "C:/temp/01/excel";
+        String allFileName = "C:/temp/合并之后的excel.xlsx";    //定义新生成的xlx表格文件
+
 
         File file = new File(Path);
         File[] tempList = file.listFiles();
