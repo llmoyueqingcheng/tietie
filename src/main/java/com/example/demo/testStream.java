@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,6 +12,17 @@ public class testStream {
 
 
     public static void main(String[] args) {
+
+        try {
+            int a = 1/0;
+;        }catch (Exception e){
+//            e.printStackTrace();
+
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(baos));
+            String exception = baos.toString();
+            System.out.println(exception);
+        }
        //map 将状态替换
         List<User> userList = new ArrayList<User>();
         userList.add(new User("张三", 22, "success"));
