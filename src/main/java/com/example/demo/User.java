@@ -1,9 +1,12 @@
 package com.example.demo;
 
+import java.util.Objects;
+
 public class User {
     private String name;
     private Integer age;
-    private String status; //success  fail
+    private boolean status; //success  fail
+
 
     public String getName() {
         return name;
@@ -21,18 +24,18 @@ public class User {
         this.age = age;
     }
 
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 
     public User() {
     }
 
-    public User(String name, Integer age, String status) {
+    public User(String name, Integer age, boolean status) {
         this.name = name;
         this.age = age;
         this.status = status;
@@ -46,4 +49,7 @@ public class User {
                 ", status='" + status + '\'' +
                 '}';
     }
+
+
+
 }

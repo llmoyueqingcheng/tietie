@@ -24,10 +24,10 @@ public class testStream {
             System.out.println(exception);
         }
        //map 将状态替换
-        List<User> userList = new ArrayList<User>();
-        userList.add(new User("张三", 22, "success"));
-        userList.add(new User("礼拜", 32, "success"));
-        userList.add(new User("盖伦", 42, "fail"));
+//        List<User> userList = new ArrayList<User>();
+//        userList.add(new User("张三", 22, "success"));
+//        userList.add(new User("礼拜", 32, "success"));
+//        userList.add(new User("盖伦", 42, "fail"));
         //遍历
 //        userList.stream().forEach(s->System.out.println(s.toString()));
         //过滤
@@ -48,12 +48,12 @@ public class testStream {
 //
 //        List<String> list = Arrays.asList("a", "b", "c");
 //        List<User> collect = userList.stream().peek(user -> user.setStatus("111")).collect(Collectors.toList());
-        List<User> collect = userList.stream().map(user -> {
-            user.setStatus("222");
-            return user;
-        }).collect(Collectors.toList());
-
-        System.out.println(collect.toString());
+//        List<User> collect = userList.stream().map(user -> {
+//            user.setStatus("222");
+//            return user;
+//        }).collect(Collectors.toList());
+//
+//        System.out.println(collect.toString());
     }
 
 
